@@ -2,7 +2,9 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/md_amber_700"
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,6 +23,8 @@
                 android:id="@+id/nombre"
                 android:text="@string/nombre"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textStyle="bold"
                 />
             <EditText
                 android:layout_width="match_parent"
@@ -37,6 +41,8 @@
                 android:text="@string/apellidos"
                 android:layout_marginTop="2dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textStyle="bold"
                 />
             <EditText
                 android:layout_width="match_parent"
@@ -52,6 +58,8 @@
                 android:text="@string/edad"
                 android:layout_marginTop="2dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textStyle="bold"
                 />
             <EditText
                 android:layout_width="match_parent"
@@ -67,6 +75,8 @@
                 android:text="@string/escuela"
                 android:layout_marginTop="2dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textStyle="bold"
                 />
             <EditText
                 android:layout_width="match_parent"
@@ -81,6 +91,9 @@
                 android:id="@+id/boton"
                 android:text="@string/datos"
                 android:layout_marginTop="2dp"
+                android:background="@color/md_light_green_300"
+                android:textColor="#fff"
+                android:textStyle="bold"
                 />
             <Button
                 android:layout_width="match_parent"
@@ -88,6 +101,10 @@
                 android:id="@+id/ver"
                 android:text="@string/ver_datos"
                 android:layout_marginTop="2dp"
+                android:background="@color/md_light_green_300"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
                 />
             <Button
                 android:layout_width="match_parent"
@@ -95,6 +112,10 @@
                 android:id="@+id/actualizar"
                 android:layout_marginTop="2dp"
                 android:text="@string/actualizar"
+                android:background="@color/md_light_green_300"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
                 />
             <Button
                 android:layout_width="match_parent"
@@ -102,6 +123,10 @@
                 android:id="@+id/borrar"
                 android:layout_marginTop="2dp"
                 android:text="@string/borrar"
+                android:background="@color/md_light_green_300"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
                 />
         </LinearLayout>
     </ScrollView>
