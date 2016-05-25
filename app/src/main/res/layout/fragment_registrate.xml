@@ -1,26 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Text inside fragment"
-        android:id="@+id/textViewStarredFragment"
-        android:layout_marginBottom="109dp"
-        android:layout_above="@+id/buttonFragmentStarred"
-        android:layout_centerHorizontal="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:textColor="@android:color/white"
-        android:backgroundTint="@color/md_green_700"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button change text"
-        android:id="@+id/buttonFragmentStarred"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/lineal"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nombre"
+                android:text="@string/nombre"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editnombre"
+                android:layout_marginTop="2dp"
+                android:hint="name"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/apellidos"
+                android:text="@string/apellidos"
+                android:layout_marginTop="2dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editapellidos"
+                android:layout_marginTop="2dp"
+                android:hint="surnames"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edad"
+                android:text="@string/edad"
+                android:layout_marginTop="2dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editmaterias"
+                android:layout_marginTop="2dp"
+                android:hint="age"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/escuela"
+                android:text="@string/escuela"
+                android:layout_marginTop="2dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editid"
+                android:layout_marginTop="2dp"
+                android:hint="school"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/boton"
+                android:text="@string/datos"
+                android:layout_marginTop="2dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ver"
+                android:text="@string/ver_datos"
+                android:layout_marginTop="2dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actualizar"
+                android:layout_marginTop="2dp"
+                android:text="@string/actualizar"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/borrar"
+                android:layout_marginTop="2dp"
+                android:text="@string/borrar"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
