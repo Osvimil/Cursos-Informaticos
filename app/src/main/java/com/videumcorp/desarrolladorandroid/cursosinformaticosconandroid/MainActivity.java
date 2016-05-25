@@ -15,6 +15,9 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.videumcorp.desarrolladorandroid.cursosinformaticosconandroid.Fragments.AcercaDe;
+import com.videumcorp.desarrolladorandroid.cursosinformaticosconandroid.Fragments.ArchivosPdf;
+import com.videumcorp.desarrolladorandroid.cursosinformaticosconandroid.Fragments.CursosBasicos;
+import com.videumcorp.desarrolladorandroid.cursosinformaticosconandroid.Fragments.CursosPremium;
 import com.videumcorp.desarrolladorandroid.cursosinformaticosconandroid.Fragments.Registrate;
 
 public class MainActivity extends AppCompatActivity {
@@ -84,14 +87,17 @@ public class MainActivity extends AppCompatActivity {
                                 return true;
                             case R.id.item_navigation_drawer_open:
                                 menuItem.setChecked(true);
+                                setFragment(2);
                                 drawerLayout.closeDrawer(GravityCompat.START);
                                 return true;
                             case R.id.item_navigation_drawer_close:
                                 menuItem.setChecked(true);
+                                setFragment(3);
                                 drawerLayout.closeDrawer(GravityCompat.START);
                                 return true;
                             case R.id.item_navigation_drawer_pdf:
                                 menuItem.setChecked(true);
+                                setFragment(4);
                                 drawerLayout.closeDrawer(GravityCompat.START);
                                 return true;
 
@@ -120,15 +126,36 @@ public class MainActivity extends AppCompatActivity {
             case 0:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                AcercaDe inboxFragment = new AcercaDe();
-                fragmentTransaction.replace(R.id.fragment, inboxFragment);
+                AcercaDe acercaDe = new AcercaDe();
+                fragmentTransaction.replace(R.id.fragment, acercaDe);
                 fragmentTransaction.commit();
                 break;
             case 1:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                Registrate starredFragment = new Registrate();
-                fragmentTransaction.replace(R.id.fragment, starredFragment);
+                Registrate registrate = new Registrate();
+                fragmentTransaction.replace(R.id.fragment, registrate);
+                fragmentTransaction.commit();
+                break;
+            case 2:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction=fragmentManager.beginTransaction();
+                CursosBasicos cursosBasicos = new CursosBasicos();
+                fragmentTransaction.replace(R.id.fragment,cursosBasicos);
+                fragmentTransaction.commit();
+                break;
+            case 3:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction=fragmentManager.beginTransaction();
+                CursosPremium cursosPremium = new CursosPremium();
+                fragmentTransaction.replace(R.id.fragment,cursosPremium);
+                fragmentTransaction.commit();
+                break;
+            case 4:
+                fragmentManager=getSupportFragmentManager();
+                fragmentTransaction=fragmentManager.beginTransaction();
+                ArchivosPdf archivosPdf = new ArchivosPdf();
+                fragmentTransaction.replace(R.id.fragment,archivosPdf);
                 fragmentTransaction.commit();
                 break;
         }
