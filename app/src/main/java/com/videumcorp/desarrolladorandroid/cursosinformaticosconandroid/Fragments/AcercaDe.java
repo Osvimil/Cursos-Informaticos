@@ -30,8 +30,11 @@ public class AcercaDe extends Fragment {
             @Override
             public void onClick(View v) {
 
-                textViewInboxFragment.setText("This is the Inbox Fragment");
-                textViewInboxFragment.setTextColor(getResources().getColor(R.color.md_yellow_800));
+                textViewInboxFragment.setText("El objetivo de esta aplicación es mostrar cursos disponibles" +
+                        "con los que cuenta nuestra APP desarrollada, todo es con el fin de que el usuario" +
+                        "pueda seleccionar el curso que más le convenga de manera gratuita y, si se logea en nuestra" +
+                        "APP será capaz de visualizar más cursos y/o cursos avanzados");
+                textViewInboxFragment.setTextColor(getResources().getColor(R.color.md_white_1000));
 
             }
         });

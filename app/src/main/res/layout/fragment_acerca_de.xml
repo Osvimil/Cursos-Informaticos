@@ -2,24 +2,29 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/md_light_green_500"
+    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Text inside fragment"
+        android:text="CURSOS INFORMÁTICOS"
         android:id="@+id/textViewInboxFragment"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="159dp" />
+        android:layout_marginBottom="159dp"
+        android:textColor="#fff"
+        />
 
     <Button
         android:backgroundTint="@color/md_yellow_700"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button change text"
+        android:text="Visualizar acerca de"
         android:id="@+id/buttonFragmentInbox"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="74dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
